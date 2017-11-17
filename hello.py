@@ -2,8 +2,8 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def homepage():
+def index():
     return "<h1>Hello heroku</h1>"
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=True)
